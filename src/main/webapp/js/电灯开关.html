@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电灯开关</title>
+</head>
+<body>
+<img src="../img/off.gif" id="light">
+<script>
+//     1.分析图片对象
+//     2.绑定单击时间
+//     3.每次点击切换图片
+// 规则：
+//     如果灯是开的，切换图片为off
+//     如果灯是关的，切换图片为on
+
+document.getElementById("light");
+var flag=false;
+light.onclick=function(){
+    if (flag){
+        light.src="../img/off.gif";
+        flag=false
+    }else {
+        light.src="../img/on.gif";
+        flag=true;
+    }
+}
+</script>
+</body>
+</html>
